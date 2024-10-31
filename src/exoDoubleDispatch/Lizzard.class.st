@@ -1,42 +1,42 @@
 Class {
-	#name : 'Scissors',
+	#name : 'Lizzard',
 	#superclass : 'Object',
 	#category : 'exoDoubleDispatch',
 	#package : 'exoDoubleDispatch'
 }
 
 { #category : 'as yet unclassified' }
-Scissors >> playAgainstLizzard [ 
-
-	^ #scissor
-]
-
-{ #category : 'as yet unclassified' }
-Scissors >> playAgainstPaper [
-
-	^ #scissor
-]
-
-{ #category : 'as yet unclassified' }
-Scissors >> playAgainstScissors [
+Lizzard >> playAgainstLizzard [
 
 	^ #draw
 ]
 
 { #category : 'as yet unclassified' }
-Scissors >> playAgainstSpock [ 
+Lizzard >> playAgainstPaper [
 
-	^ #spock
+	^ #lizzard
 ]
 
 { #category : 'as yet unclassified' }
-Scissors >> playAgainstStone [
+Lizzard >> playAgainstScissors [
+
+	^ #scissors
+]
+
+{ #category : 'as yet unclassified' }
+Lizzard >> playAgainstSpock [
+
+	^ #lizzard
+]
+
+{ #category : 'as yet unclassified' }
+Lizzard >> playAgainstStone [
 
 	^ #stone
 ]
 
 { #category : 'as yet unclassified' }
-Scissors >> vs: anElement [
+Lizzard >> vs: anElement [
 
-	^ anElement playAgainstScissors
+	^ anElement playAgainstLizzard
 ]

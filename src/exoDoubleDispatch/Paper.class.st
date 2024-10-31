@@ -6,6 +6,12 @@ Class {
 }
 
 { #category : 'as yet unclassified' }
+Paper >> playAgainstLizzard [
+
+	^ #lizzard
+]
+
+{ #category : 'as yet unclassified' }
 Paper >> playAgainstPaper [
 
 	^ #draw
@@ -15,6 +21,12 @@ Paper >> playAgainstPaper [
 Paper >> playAgainstScissors [
 
 	^ #scissor
+]
+
+{ #category : 'as yet unclassified' }
+Paper >> playAgainstSpock [
+
+	^ #paper
 ]
 
 { #category : 'as yet unclassified' }

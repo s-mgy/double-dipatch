@@ -6,6 +6,12 @@ Class {
 }
 
 { #category : 'as yet unclassified' }
+Stone >> playAgainstLizzard [ 
+
+	^ #stone
+]
+
+{ #category : 'as yet unclassified' }
 Stone >> playAgainstPaper [
 
 	^ #paper
@@ -15,6 +21,12 @@ Stone >> playAgainstPaper [
 Stone >> playAgainstScissors [
 
 	^ #stone
+]
+
+{ #category : 'as yet unclassified' }
+Stone >> playAgainstSpock [
+
+	^ #spock
 ]
 
 { #category : 'as yet unclassified' }
