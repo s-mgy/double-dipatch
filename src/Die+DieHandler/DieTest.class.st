@@ -6,6 +6,14 @@ Class {
 }
 
 { #category : 'tests' }
+DieTest >> testCreationIsOk [
+
+	| d |
+	d := Die withFaces: 78.
+	self assert: d faces equals: 78
+]
+
+{ #category : 'tests' }
 DieTest >> testInitIsOk [
 
 	| d |
