@@ -9,13 +9,9 @@ Class {
 }
 
 { #category : 'initialization' }
-DieHandle >> + aDieHandle [
+DieHandle >> + aDicable [
 
-	| handle |
-	handle := self class new.
-	self dice do: [ :each | handle addDie: each ].
-	aDieHandle dice do: [ :each | handle addDie: each ].
-	^ handle
+	^ aDicable sumWithDieHandle: self
 ]
 
 { #category : 'initialization' }
@@ -59,4 +55,24 @@ DieHandle >> roll [
 	res := 0.
 	dice do: [ :each | res := res + each roll ].
 	^ res
+]
+
+{ #category : 'initialization' }
+DieHandle >> sumWithDie: aDie [
+
+	| handle |
+	handle := self class new.
+	self dice do: [ :each | handle addDie: each ].
+	handle addDie: aDie.
+	^ handle
+]
+
+{ #category : 'initialization' }
+DieHandle >> sumWithDieHandle: aDieHandle [
+
+	| handle |
+	handle := self class new.
+	self dice do: [ :each | handle addDie: each ].
+	aDieHandle dice do: [ :each | handle addDie: each ].
+	^ handle
 ]
